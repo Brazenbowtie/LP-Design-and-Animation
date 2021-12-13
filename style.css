@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'Roboto Mono', monospace;
+    min-height: 100vh;
+    background: linear-gradient(to right top,#f2b2b2, #f5f4b0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color:rgb(58, 58, 58);
+    font-weight: 600;
+    font-size: 2.75rem;
+    opacity: 0.8;
+}
+
+h2 {
+    color: rgb(58, 58, 58);
+    font-weight: 800;
+    Opacity: 0.9;
+}
+
+h3 {
+    color:rgb(58, 58, 58);
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+p {
+    color:rgb(58, 58, 58);
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.glass {
+    background: white;
+    min-height: 75vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7), 
+    rgba(255, 255, 255, 0.3));
+    border-radius: 3rem;
+    z-index: 2; /* controls depth */
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1 {
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    border-radius: 50%;
+    animation: blink 10s infinite;
+    -webkit-animation: blink 10s infinite;
+}
+
+.circle2 {
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top: 18%;
+    left: 7%;
+    border-radius: 50%;
+    animation: blink 10s infinite;
+    -webkit-animation: blink 10s infinite;
+}
+
+.dashboard {
+    flex: 1; /* takes up available space to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7), 
+    rgba(255, 255, 255, 0.3));
+    border-radius: 3rem;
+}
+
+.diablo {
+    flex: 2; /* twice the amount of space as flex 1 */
+}
+
+.links {
+    margin: 10px;
+    padding: 1px;
+}
+
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+.icon {
+    height: 5rem;
+    width: 6rem;
+    margin: 4px;
+    padding: 4px;
+}
+
+#avatar {
+    Margin: 1rem;
+    Border-color: black;
+    border-width: 2px;
+}
+
+
+
+@keyframes blink {
+    0% {
+        background: white;
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    15% {
+        background: rgb(241, 145, 145);
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    30% {
+        background: rgb(175, 236, 163);
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    48% {
+        background: rgb(241, 233, 152);
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    75% {
+        background: rgb(171, 164, 238);
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    92% {
+        background: rgb(241, 154, 237);
+        background: linear-gradient(
+        );
+    }
+    100% {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+        );
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        background: white;
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    15% {
+        background: rgb(241, 145, 145);
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    30% {
+        background: rgb(175, 236, 163);
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    48% {
+        background: rgb(241, 233, 152);
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    75% {
+        background: rgb(171, 164, 238);
+        background: linear-gradient(
+            to right bottom
+        );
+    }
+    92% {
+        background: rgb(241, 154, 237);
+        background: linear-gradient(
+        );
+    }
+    100% {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+        );
+    }
+}
+
+/* Diablo Section*/
+.status {
+    margin-bottom: 3rem;
+}
+
+.status input {
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7), 
+    rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.diablo {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top,
+    rgba(255,255,255,.8),
+    rgba(255,255,255,.5),
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+}
+
+.level {
+    background: linear-gradient(to right top, #65dfc9, #2fce37);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.level::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(58, 58, 58);
+    position: absolute;
+    left: 60%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.levelvalue {
+    font-weight: bold;
+    background: linear-gradient(to left top,#ec9393, #958af7);
+    background-clip: text; /*needed to define non webkit version*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.PC {
+    height: 5rem;
+    width: 16rem;
+    border-radius: 2rem;
+}
